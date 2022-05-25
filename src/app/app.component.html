@@ -1,0 +1,14 @@
+
+<fm-pivot #pivot
+[toolbar]="true"
+[report]="pivotReport"
+[height]="600"
+(reportcomplete)="onReportComplete()"
+>
+</fm-pivot>
+
+<div class="chart-container">
+  <div id="highcharts-container"></div>
+</div>
+
+<router-outlet></router-outlet>
